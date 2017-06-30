@@ -1,3 +1,98 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+.navbar {
+    border: none;
+    min-height: 50px;
+    background: rgba(255,255,255,.4);
+    -o-transition: .3s background ease;
+    transition: .3s background ease;
+}
+
+.jarallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.banner-top, .banner {
+    position: relative;
+    min-height: 550px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+	padding-top: 20px;
+}
+
+.angled-img .img {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: skew(-8deg);
+    -ms-transform: skew(-8deg);
+    -o-transform: skew(-8deg);
+    transform: skew(-8deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    background: #C6C3D8;
+    -webkit-backface-visibility: hidden;
+}
+
+.angled-img .img>img {
+    width: 100%;
+    -webkit-transform: skew(8deg) scale(1.112);
+    -ms-transform: skew(8deg) scale(1.112);
+    -o-transform: skew(8deg) scale(1.112);
+    transform: skew(8deg) scale(1.112);
+    -o-transition: .3s opacity ease;
+    transition: .3s opacity ease;
+    -webkit-backface-visibility: hidden;
+    opacity: .5;
+}
+
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+}
+
+.angled-img:hover .img>img {
+    opacity: .8;
+}
+
+.angled-img .over-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.angled-img .over-info>div {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.angled-img .over-info>div>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.angled-img .over-info .rating, .angled-img .over-info h4 {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
